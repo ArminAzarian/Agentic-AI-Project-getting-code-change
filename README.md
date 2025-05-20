@@ -47,9 +47,12 @@ BASELINE_2_PATH = "my-repo/project/baseline-2.0.zip"
 TEMP_DIR = "temp_code_analysis"
 CLOC_PATH = "/usr/local/bin/cloc"
 
-Output
+ ```
+
+**Output**
 The script generates a JSON output that contains the analysis results for both code baselines. The JSON structure is as follows:
 
+```python
 {
   "baseline1": {
  "artifact_path": "your-repo/baseline1/your-artifact-1.0.0.zip",
@@ -76,7 +79,7 @@ The script generates a JSON output that contains the analysis results for both c
  }
   }
 }
-
+```
 
 artifact_path: The path to the artifact in Artifactory.
 analysis: A dictionary containing the analysis results.
@@ -85,7 +88,7 @@ todo_count: The number of "TODO" comments found in the code.
 Other analysis results can be added here.
 
 
-Integration with Agentic AI
+**Integration with Agentic AI**
 This script is designed to be used as a tool by an agentic AI system. Here's how it can be integrated:
 
 Agent Task Definition: The AI agent needs to be given a task related to code analysis, such as:
